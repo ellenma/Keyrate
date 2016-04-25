@@ -8,7 +8,7 @@ v = 0.01;
 f = 1.16;
 e0 = 0.5;
 
-Q1 = u^2 / (u * v - v^2) *...
+Q1 = u^2*exp(-u) / (u * v - v^2) *...
     (Qv * exp(v) - Qu * exp(u) * v^2 / u^2 - Eu * Qu * exp(u) * (u^2 - v^2) / e0 / u^2);
 
 e1 = Eu * Qu / Q1;
